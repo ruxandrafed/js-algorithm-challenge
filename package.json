@@ -1,0 +1,16 @@
+{
+  "name": "JS-algorithm-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "benchmark": "^2.1.1",
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
