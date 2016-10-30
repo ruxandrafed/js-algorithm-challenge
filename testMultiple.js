@@ -77,3 +77,41 @@ describe('whileSum', function() {
     whileSum(45678).should.equal(486804150);
   })
 });
+
+var forSum = require( './forSum' );
+describe('forSum', function() {
+  it('should return 23 when passed 10', function() {
+    forSum(10).should.equal(23);
+  })
+  it('should return 78 when passed 20', function() {
+    forSum(20).should.equal(78);
+  })
+  it('should return 2318 when passed 100', function() {
+    forSum(100).should.equal(2318);
+  })
+  it('should return 23331668 when passed 10000', function() {
+    forSum(10000).should.equal(23331668);
+  })
+  it('should return 486804150 when passed 45678', function() {
+    forSum(45678).should.equal(486804150);
+  })
+});
+
+var math = require( './math' );
+describe('math', function() {
+  it('should return 23 when passed 10', function() {
+    math(10).should.equal(23);
+  })
+  it('should return 78 when passed 20', function() {
+    math(20).should.equal(78);
+  })
+  it('should return 2318 when passed 100', function() {
+    math(100).should.equal(2318);
+  })
+  it('should return 23331668 when passed 10000', function() {
+    math(10000).should.equal(23331668);
+  })
+  it('should return 486804150 when passed 45678', function() {
+    math(45678).should.equal(486804150);
+  })
+});

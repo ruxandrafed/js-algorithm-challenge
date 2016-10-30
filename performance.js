@@ -7,6 +7,8 @@ var arrayPushAndIncrement = require( './arrayPushIncrement' );
 var arrayPushAndReduce = require( './arrayPushReduce' );
 var whileArrayReduce = require( './whileArrayReduce' );
 var whileSum = require( './whileSum' );
+var forSum = require( './forSum' );
+var math = require( './math' );
 // add tests
 suite.add( 'arrayPushAndIncrement', function() {
   arrayPushAndIncrement(45678)
@@ -19,6 +21,12 @@ suite.add( 'arrayPushAndIncrement', function() {
   })
   .add( 'whileSum', function() {
     whileSum(45678)
+  })
+  .add( 'forSum', function() {
+    forSum(45678)
+  })
+  .add( 'math', function() {
+    math(45678)
   })
   // add listeners
   .on( 'cycle', function( event ) {
