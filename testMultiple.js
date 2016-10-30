@@ -39,3 +39,41 @@ describe('arrayPushAndReduce', function() {
     arrayPushAndReduce(45678).should.equal(486804150);
   })
 });
+
+var whileArrayReduce = require( './whileArrayReduce' );
+describe('whileArrayReduce', function() {
+  it('should return 23 when passed 10', function() {
+    whileArrayReduce(10).should.equal(23);
+  })
+  it('should return 78 when passed 20', function() {
+    whileArrayReduce(20).should.equal(78);
+  })
+  it('should return 2318 when passed 100', function() {
+    whileArrayReduce(100).should.equal(2318);
+  })
+  it('should return 23331668 when passed 10000', function() {
+    whileArrayReduce(10000).should.equal(23331668);
+  })
+  it('should return 486804150 when passed 45678', function() {
+    whileArrayReduce(45678).should.equal(486804150);
+  })
+});
+
+var whileSum = require( './whileSum' );
+describe('whileSum', function() {
+  it('should return 23 when passed 10', function() {
+    whileSum(10).should.equal(23);
+  })
+  it('should return 78 when passed 20', function() {
+    whileSum(20).should.equal(78);
+  })
+  it('should return 2318 when passed 100', function() {
+    whileSum(100).should.equal(2318);
+  })
+  it('should return 23331668 when passed 10000', function() {
+    whileSum(10000).should.equal(23331668);
+  })
+  it('should return 486804150 when passed 45678', function() {
+    whileSum(45678).should.equal(486804150);
+  })
+});
